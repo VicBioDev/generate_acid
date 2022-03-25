@@ -171,6 +171,9 @@ export default {
         let subDay = i + 1;
         const testTime = dayjs()
           .subtract(subDay, 'day')
+          .subtract(Math.floor(Math.random() * 23), 'hour')
+          .subtract(Math.floor(Math.random() * 59), 'minute')
+          .subtract(Math.floor(Math.random() * 59), 'second')
           .format('YYYY-MM-DD HH:mm:ss');
         const reportTime = dayjs(testTime, 'YYYY-MM-DD HH:mm:ss').add(2, 'day');
 
