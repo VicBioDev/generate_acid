@@ -168,7 +168,7 @@ export default {
     makeReport() {
       for (var i = 0; i < this.count; i++) {
         // and the formula is:
-        let subDay = i + 1;
+        let subDay = i + 2;
         const testTime = dayjs()
           .subtract(subDay, 'day')
           .subtract(Math.floor(Math.random() * 23), 'hour')
